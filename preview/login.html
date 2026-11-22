@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вход — Научный прогресс</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.addEventListener('submit', function (e) { e.preventDefault(); });</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="home.html" class="logo" aria-label="На главную">
+            <span class="logo-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+            </span>
+            <span class="logo-text">
+                <strong>Научный прогресс</strong>
+                <small>новости науки и технологий</small>
+            </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+            <a href="home.html">Главная</a>
+            <a href="category.html">Технологии</a>
+            <a href="journalist.html">Журналист</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="login.html" class="btn btn-light btn-sm">Войти</a>
+                <a href="register.html" class="btn btn-accent btn-sm">Регистрация</a>
+        </div>
+    </div>
+</header>
+<main class="site-main">
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-card">
+                <div class="auth-head"><h1>Вход</h1><p>Войдите, используя логин и пароль</p></div>
+                <form method="POST" action="#" class="auth-form">
+                    <div class="form-group">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login" name="login" class="form-control" placeholder="Ваш логин" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Ваш пароль" required>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-block">Войти</button>
+                    <p class="auth-switch">Нет аккаунта? <a href="register.html">Зарегистрируйтесь</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-about">
+            <a href="home.html" class="logo logo-footer">
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </span>
+                <strong>Научный прогресс</strong>
+            </a>
+            <p>Новостной портал о достижениях науки и технологий: космос, ИТ, медицина и физика.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Разделы</h4>
+            <ul>
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="category.html">Технологии</a></li>
+                <li><a href="journalist.html">Журналист</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul>
+                <li>г. Москва, пр-т Мира, 1</li>
+                <li><a href="mailto:info@progress.ru">info@progress.ru</a></li>
+                <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Подписка</h4>
+            <p>Новости науки — раз в неделю на вашу почту.</p>
+            <form class="subscribe-form" action="#" method="post">
+                <input type="email" name="email" placeholder="Ваш e-mail" required>
+                <button type="submit" class="btn btn-accent btn-sm">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© 2026 «Научный прогресс». Лабораторная работа №2.</span>
+        <span class="footer-made">Сделано на Laravel</span>
+    </div>
+</footer>
+</body>
+</html>
