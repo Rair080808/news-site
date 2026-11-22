@@ -73,15 +73,3 @@ php artisan serve
 admin	admin123	admin
 jurnalist	secret	journalist
 reader	reader123	reader
-Порядок проверки
-Проверка работы разделов и разграничения доступа выполняется с использованием тестовых учётных записей. Для каждого аккаунта проверяется доступность соответствующих разделов в соответствии с таблицей «Доступ по ролям». Проверка связей базы данных выполняется через php artisan tinker:
-
-bash
-
-
-php artisan tinker
-> App\Models\Role::with('users')->get();
-> App\Models\User::with('role','texts')->first();
-> App\Models\Text::first()->category->name;
-> App\Models\Category::first()->texts->count();
-Текстовый файл с подробной инструкцией по проверке — ИНСТРУКЦИЯ-ПРОВЕРКА.md. ER-диаграмма базы данных — ER-диаграмма-БД.png.
